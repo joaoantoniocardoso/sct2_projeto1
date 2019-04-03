@@ -29,7 +29,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.35)
     (user_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 1)
@@ -1525,7 +1525,6 @@
 
   (segment (start 172.025 69.55) (end 174.475 72) (width 0.5) (layer B.Cu) (net 1))
   (segment (start 172.025 69.5) (end 172.025 69.55) (width 0.5) (layer B.Cu) (net 1))
-  (segment (start 184.7 74.27) (end 184.7 74.3) (width 0.5) (layer B.Cu) (net 6) (tstamp 5CA3E0D5) (status 30))
   (segment (start 191.4875 74) (end 191.4875 68.9875) (width 0.5) (layer B.Cu) (net 2) (tstamp 5CA3E023) (status 10))
   (segment (start 191.4875 68.4875) (end 191 68) (width 0.5) (layer B.Cu) (net 2) (tstamp 5CA3E028) (status 10))
   (segment (start 191.4875 68.3625) (end 191.85 68) (width 0.5) (layer B.Cu) (net 2) (tstamp 5CA3E02A) (status 30))
@@ -1608,6 +1607,7 @@
   (segment (start 192.3 62.5) (end 192.3 64.8) (width 0.5) (layer B.Cu) (net 4))
   (segment (start 169.95 69.525) (end 169.975 69.5) (width 0.5) (layer B.Cu) (net 5))
   (segment (start 169.95 72) (end 169.95 69.525) (width 0.5) (layer B.Cu) (net 5))
+  (segment (start 184.7 74.27) (end 184.7 74.3) (width 0.5) (layer B.Cu) (net 6) (tstamp 5CA3E0D5) (status 30))
   (segment (start 172.475 75.3) (end 172.475 74.5) (width 0.5) (layer B.Cu) (net 6))
   (segment (start 183.45 74.27) (end 182 75.72) (width 0.5) (layer B.Cu) (net 6))
   (segment (start 184.7 74.27) (end 183.45 74.27) (width 0.5) (layer B.Cu) (net 6))
@@ -1665,8 +1665,6 @@
   (segment (start 194.5 71.75) (end 194.5 70.5) (width 0.5) (layer B.Cu) (net 12))
   (segment (start 199.52 76.77) (end 194.5 71.75) (width 0.5) (layer B.Cu) (net 12))
   (segment (start 203.845 76.77) (end 199.52 76.77) (width 0.5) (layer B.Cu) (net 12))
-  (segment (start 179.3 75.54) (end 179.3 76.81) (width 0.5) (layer B.Cu) (net 15) (status 30))
-  (segment (start 184.7 69.19) (end 184.7 70.46) (width 0.5) (layer B.Cu) (net 14) (tstamp 5CA3E025) (status 30))
   (segment (start 184.7 75.54) (end 184.7 76.81) (width 0.5) (layer B.Cu) (net 13) (status 30))
   (segment (start 184.7 77.61) (end 182.81 79.5) (width 0.5) (layer B.Cu) (net 13))
   (segment (start 184.7 76.81) (end 184.7 77.61) (width 0.5) (layer B.Cu) (net 13))
@@ -1676,8 +1674,10 @@
   (segment (start 171.5 79.5) (end 170 79.5) (width 0.5) (layer B.Cu) (net 13))
   (segment (start 184.89 77) (end 184.7 76.81) (width 0.5) (layer B.Cu) (net 13))
   (segment (start 187.5 77) (end 184.89 77) (width 0.5) (layer B.Cu) (net 13))
+  (segment (start 184.7 69.19) (end 184.7 70.46) (width 0.5) (layer B.Cu) (net 14) (tstamp 5CA3E025) (status 30))
+  (segment (start 179.3 75.54) (end 179.3 76.81) (width 0.5) (layer B.Cu) (net 15) (status 30))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5CA520AD) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
