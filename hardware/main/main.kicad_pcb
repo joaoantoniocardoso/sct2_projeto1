@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 11)
-    (tracks 151)
+    (tracks 153)
     (zones 0)
     (modules 39)
     (nets 16)
@@ -1523,6 +1523,8 @@
   (gr_line (start 242.5 32.5) (end 250 40) (layer B.SilkS) (width 0.12))
   (gr_line (start 242.5 32.5) (end 250 25) (layer B.SilkS) (width 0.12))
 
+  (segment (start 172.025 69.55) (end 174.475 72) (width 0.5) (layer B.Cu) (net 1))
+  (segment (start 172.025 69.5) (end 172.025 69.55) (width 0.5) (layer B.Cu) (net 1))
   (segment (start 184.7 74.27) (end 184.7 74.3) (width 0.5) (layer B.Cu) (net 6) (tstamp 5CA3E0D5) (status 30))
   (segment (start 191.4875 74) (end 191.4875 68.9875) (width 0.5) (layer B.Cu) (net 2) (tstamp 5CA3E023) (status 10))
   (segment (start 191.4875 68.4875) (end 191 68) (width 0.5) (layer B.Cu) (net 2) (tstamp 5CA3E028) (status 10))
