@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Amplifier_Operational:LM324 U101
-U 1 1 5CA24F80
-P 4050 3850
-F 0 "U101" H 4050 4100 50  0000 C CNN
-F 1 "LM324" H 4050 4200 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4000 3950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4100 4050 50  0001 C CNN
-	1    4050 3850
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R_Small R105
 U 1 1 5CA26933
 P 7050 4250
@@ -58,36 +47,8 @@ F 3 "~" H 3000 4050 50  0001 C CNN
 	1    3000 4050
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5CA30757
-P 3650 4100
-F 0 "#PWR0103" H 3650 3850 50  0001 C CNN
-F 1 "GND" H 3700 3900 50  0000 C CNN
-F 2 "" H 3650 4100 50  0001 C CNN
-F 3 "" H 3650 4100 50  0001 C CNN
-	1    3650 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3750 3950 3650 3950
-Wire Wire Line
-	3650 3950 3650 4100
-$Comp
-L Device:R_Small R103
-U 1 1 5CA30F84
-P 3450 3750
-F 0 "R103" V 3200 3750 50  0000 C CNN
-F 1 "10k" V 3300 3750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3450 3750 50  0001 C CNN
-F 3 "~" H 3450 3750 50  0001 C CNN
-	1    3450 3750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3350 3750 3000 3750
-Wire Wire Line
-	6100 3950 6100 4050
+	6100 3550 6100 4050
 Wire Wire Line
 	6250 4250 6850 4250
 Wire Wire Line
@@ -120,75 +81,9 @@ F 3 "" H 7800 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 3750 3000 3850
-Wire Wire Line
 	3000 4250 3000 4850
-$Comp
-L Connector:TestPoint TP103
-U 1 1 5CA527F7
-P 4450 2750
-F 0 "TP103" H 4400 3100 50  0000 L CNN
-F 1 "TestPoint" H 4300 3000 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4650 2750 50  0001 C CNN
-F 3 "~" H 4650 2750 50  0001 C CNN
-	1    4450 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 3850 4450 3850
-Wire Wire Line
-	3550 3750 3650 3750
-Wire Wire Line
-	3650 2950 3650 3200
-Wire Wire Line
-	3650 2950 3900 2950
-Connection ~ 3650 3750
-Wire Wire Line
-	3650 3750 3750 3750
-Wire Wire Line
-	4450 2950 4450 3200
-Wire Wire Line
-	4300 3200 4450 3200
-Connection ~ 4450 3200
-Wire Wire Line
-	4450 3200 4450 3400
-Wire Wire Line
-	3650 3200 3750 3200
-Connection ~ 3650 3200
-Wire Wire Line
-	3650 3200 3650 3400
 Wire Wire Line
 	7250 3800 7250 4250
-$Comp
-L Device:C_Small C106
-U 1 1 5CA609C2
-P 4200 3200
-F 0 "C106" V 3950 3200 50  0000 C CNN
-F 1 "100n" V 4050 3200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 3200 50  0001 C CNN
-F 3 "~" H 4200 3200 50  0001 C CNN
-	1    4200 3200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4100 2950 4450 2950
-$Comp
-L Connector:TestPoint TP102
-U 1 1 5CA62440
-P 3650 2750
-F 0 "TP102" H 3600 3100 50  0000 L CNN
-F 1 "TestPoint" H 3500 3000 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3850 2750 50  0001 C CNN
-F 3 "~" H 3850 2750 50  0001 C CNN
-	1    3650 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 2750 3650 2950
-Connection ~ 3650 2950
-Connection ~ 4450 2950
-Wire Wire Line
-	4450 2750 4450 2950
 $Comp
 L Connector:TestPoint TP101
 U 1 1 5CA66FC6
@@ -200,15 +95,12 @@ F 3 "~" H 3200 2750 50  0001 C CNN
 	1    3000 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 2750 3000 3750
-Connection ~ 3000 3750
 $Comp
 L Connector:TestPoint TP104
 U 1 1 5CA6C390
 P 6850 2750
-F 0 "TP104" H 6950 2900 50  0000 L CNN
-F 1 "TestPoint" H 6950 2800 50  0000 L CNN
+F 0 "TP104" H 6750 3100 50  0000 L CNN
+F 1 "TestPoint" H 6750 3000 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7050 2750 50  0001 C CNN
 F 3 "~" H 7050 2750 50  0001 C CNN
 	1    6850 2750
@@ -223,8 +115,8 @@ $Comp
 L Connector:TestPoint TP105
 U 1 1 5CA7056A
 P 7250 2750
-F 0 "TP105" H 7350 2900 50  0000 L CNN
-F 1 "TestPoint" H 7300 2850 50  0000 L CNN
+F 0 "TP105" H 7150 3100 50  0000 L CNN
+F 1 "TestPoint" H 7150 3000 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7450 2750 50  0001 C CNN
 F 3 "~" H 7450 2750 50  0001 C CNN
 	1    7250 2750
@@ -337,16 +229,12 @@ Wire Wire Line
 Wire Wire Line
 	3500 6550 2700 6550
 Connection ~ 2700 6550
-Text Notes 3350 2200 0    50   ~ 0
+Text Notes 3650 2350 0    50   ~ 0
 BLOCO DE PRIMEIRA ORDEM
 Text Notes 6900 2250 0    50   ~ 0
 BLOCO DE SEGUNDA ORDEM
 Wire Notes Line
-	3250 2250 3250 4650
-Wire Notes Line
-	3250 4650 5800 4650
-Wire Notes Line
-	5800 2250 3250 2250
+	5550 2350 3500 2350
 Wire Notes Line
 	6700 4750 6700 2350
 Wire Notes Line
@@ -404,8 +292,8 @@ $Comp
 L Connector:TestPoint TP106
 U 1 1 5CA74222
 P 7650 2750
-F 0 "TP106" H 7550 2900 50  0000 R CNN
-F 1 "TestPoint" H 7550 2800 50  0000 R CNN
+F 0 "TP106" H 7750 3100 50  0000 R CNN
+F 1 "TestPoint" H 7750 3000 50  0000 R CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7850 2750 50  0001 C CNN
 F 3 "~" H 7850 2750 50  0001 C CNN
 	1    7650 2750
@@ -425,8 +313,8 @@ $Comp
 L Connector:TestPoint TP107
 U 1 1 5CA72F09
 P 8500 2750
-F 0 "TP107" H 8600 2900 50  0000 L CNN
-F 1 "TestPoint" H 8600 2800 50  0000 L CNN
+F 0 "TP107" H 8400 3100 50  0000 L CNN
+F 1 "TestPoint" H 8300 3000 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 8700 2750 50  0001 C CNN
 F 3 "~" H 8700 2750 50  0001 C CNN
 	1    8500 2750
@@ -500,40 +388,6 @@ Wire Wire Line
 	1700 6550 1700 6650
 Wire Wire Line
 	1700 5750 1700 5850
-$Comp
-L Device:C_Small C105
-U 1 1 5CB0ECD8
-P 3850 3200
-F 0 "C105" V 4000 3000 50  0000 C CNN
-F 1 "100n" V 3900 3000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3850 3200 50  0001 C CNN
-F 3 "~" H 3850 3200 50  0001 C CNN
-	1    3850 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C109
-U 1 1 5CB0FB9C
-P 4050 3400
-F 0 "C109" V 4100 3600 50  0000 C CNN
-F 1 "100n" V 4200 3600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 3400 50  0001 C CNN
-F 3 "~" H 4050 3400 50  0001 C CNN
-	1    4050 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3950 3400 3650 3400
-Connection ~ 3650 3400
-Wire Wire Line
-	3650 3400 3650 3750
-Wire Wire Line
-	3950 3200 4100 3200
-Wire Wire Line
-	4150 3400 4450 3400
-Connection ~ 4450 3400
-Wire Wire Line
-	4450 3400 4450 3850
 $Comp
 L Device:C_Small C111
 U 1 1 5CB18E41
@@ -655,77 +509,6 @@ Wire Wire Line
 	7250 4250 7250 4600
 Wire Wire Line
 	7250 4600 7350 4600
-Wire Notes Line
-	5800 4650 5800 2250
-$Comp
-L Amplifier_Operational:LM324 U101
-U 4 1 5CB40217
-P 5250 3950
-F 0 "U101" H 5250 3550 50  0000 C CNN
-F 1 "LM324" H 5250 3650 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5200 4050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 5300 4150 50  0001 C CNN
-	4    5250 3950
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5CB40221
-P 4850 4200
-F 0 "#PWR0104" H 4850 3950 50  0001 C CNN
-F 1 "GND" H 4900 4000 50  0000 C CNN
-F 2 "" H 4850 4200 50  0001 C CNN
-F 3 "" H 4850 4200 50  0001 C CNN
-	1    4850 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 4050 4850 4050
-Wire Wire Line
-	4850 4050 4850 4200
-$Comp
-L Device:R_Small R104
-U 1 1 5CB4022D
-P 4650 3850
-F 0 "R104" V 4400 3850 50  0000 C CNN
-F 1 "10k" V 4500 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4650 3850 50  0001 C CNN
-F 3 "~" H 4650 3850 50  0001 C CNN
-	1    4650 3850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4750 3850 4850 3850
-Connection ~ 4850 3850
-Wire Wire Line
-	4850 3850 4950 3850
-Wire Wire Line
-	4850 3500 4850 3850
-Wire Wire Line
-	4550 3850 4450 3850
-Connection ~ 4450 3850
-$Comp
-L Device:R_Small R102
-U 1 1 5CB5C28F
-P 5050 3500
-F 0 "R102" V 4800 3500 50  0000 C CNN
-F 1 "10k" V 4900 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5050 3500 50  0001 C CNN
-F 3 "~" H 5050 3500 50  0001 C CNN
-	1    5050 3500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4950 3500 4850 3500
-Wire Wire Line
-	5150 3500 5650 3500
-Wire Wire Line
-	5650 3500 5650 3950
-Wire Wire Line
-	5650 3950 5550 3950
-Wire Wire Line
-	5650 3950 6100 3950
-Connection ~ 5650 3950
 $Comp
 L Device:D_Zener_Small D101
 U 1 1 5CBA03D6
@@ -829,17 +612,6 @@ Wire Wire Line
 	3500 5400 3500 5850
 Connection ~ 3500 5850
 $Comp
-L Device:R_Small R101
-U 1 1 5CA60BF7
-P 4000 2950
-F 0 "R101" V 4250 2950 50  0000 C CNN
-F 1 "10k" V 4150 2950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 2950 50  0001 C CNN
-F 3 "~" H 4000 2950 50  0001 C CNN
-	1    4000 2950
-	0    1    -1   0   
-$EndComp
-$Comp
 L Jumper:SolderJumper_3_Open JP102
 U 1 1 5CA2762A
 P 6100 4250
@@ -853,39 +625,39 @@ $EndComp
 $Comp
 L Amplifier_Operational:LM324 U101
 U 3 1 5CCE2776
-P 6750 5400
-F 0 "U101" H 6750 5000 50  0000 C CNN
-F 1 "LM324" H 6750 5100 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6700 5500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6800 5600 50  0001 C CNN
-	3    6750 5400
+P 7300 5800
+F 0 "U101" H 7300 5400 50  0000 C CNN
+F 1 "LM324" H 7300 5500 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7250 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 7350 6000 50  0001 C CNN
+	3    7300 5800
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	6450 5500 6350 5500
+	7000 5900 6900 5900
 $Comp
 L power:GND #PWR0109
 U 1 1 5CCF602D
-P 6350 5600
-F 0 "#PWR0109" H 6350 5350 50  0001 C CNN
-F 1 "GND" H 6400 5400 50  0000 C CNN
-F 2 "" H 6350 5600 50  0001 C CNN
-F 3 "" H 6350 5600 50  0001 C CNN
-	1    6350 5600
+P 6900 6000
+F 0 "#PWR0109" H 6900 5750 50  0001 C CNN
+F 1 "GND" H 6950 5800 50  0000 C CNN
+F 2 "" H 6900 6000 50  0001 C CNN
+F 3 "" H 6900 6000 50  0001 C CNN
+	1    6900 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 5500 6350 5600
+	6900 5900 6900 6000
 Wire Wire Line
-	6350 5100 6350 5300
+	6900 5500 6900 5700
 Wire Wire Line
-	6350 5300 6450 5300
+	6900 5700 7000 5700
 Wire Wire Line
-	7150 5100 7150 5400
+	7700 5500 7700 5800
 Wire Wire Line
-	7150 5400 7050 5400
+	7700 5800 7600 5800
 Wire Wire Line
-	6350 5100 7150 5100
+	6900 5500 7700 5500
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO101
 U 1 1 5CD50677
@@ -941,4 +713,237 @@ F 3 "~" H 2800 1000 50  0001 C CNN
 	1    2800 1000
 	1    0    0    -1  
 $EndComp
+Connection ~ 4000 3450
+Wire Wire Line
+	3800 3450 4000 3450
+$Comp
+L Device:R_Small R101
+U 1 1 5CA60BF7
+P 3700 3450
+F 0 "R101" V 3950 3450 50  0000 C CNN
+F 1 "10k" V 3850 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3700 3450 50  0001 C CNN
+F 3 "~" H 3700 3450 50  0001 C CNN
+	1    3700 3450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4000 3800 4000 3700
+Wire Wire Line
+	4200 3850 4200 4050
+$Comp
+L Device:C_Small C109
+U 1 1 5CB0FB9C
+P 4200 3750
+F 0 "C109" H 4400 3800 50  0000 C CNN
+F 1 "100n" H 4400 3700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 3750 50  0001 C CNN
+F 3 "~" H 4200 3750 50  0001 C CNN
+	1    4200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C105
+U 1 1 5CB0ECD8
+P 4000 3900
+F 0 "C105" H 3800 3950 50  0000 C CNN
+F 1 "100n" H 3800 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 3900 50  0001 C CNN
+F 3 "~" H 4000 3900 50  0001 C CNN
+	1    4000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C106
+U 1 1 5CA609C2
+P 4000 3600
+F 0 "C106" H 3800 3650 50  0000 C CNN
+F 1 "100n" H 3800 3550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 3600 50  0001 C CNN
+F 3 "~" H 4000 3600 50  0001 C CNN
+	1    4000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4050 4100 4050
+Wire Wire Line
+	4000 4050 4000 4000
+Wire Wire Line
+	4000 3450 4200 3450
+Wire Wire Line
+	4000 3500 4000 3450
+$Comp
+L Connector:TestPoint TP103
+U 1 1 5CA527F7
+P 4600 2750
+F 0 "TP103" H 4550 3100 50  0000 L CNN
+F 1 "TestPoint" H 4450 3000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4800 2750 50  0001 C CNN
+F 3 "~" H 4800 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U101
+U 1 1 5CA24F80
+P 5000 3550
+F 0 "U101" H 5000 3800 50  0000 C CNN
+F 1 "LM324" H 5000 3900 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4950 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 5050 3750 50  0001 C CNN
+	1    5000 3550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5550 4750 5550 2350
+Wire Notes Line
+	3500 2350 3500 4750
+Wire Notes Line
+	3500 4750 5550 4750
+Wire Wire Line
+	3000 2750 3000 3450
+Wire Wire Line
+	4700 3650 4600 3650
+Wire Wire Line
+	4600 3650 4600 3800
+Wire Wire Line
+	4600 3800 5000 3800
+Connection ~ 4600 3800
+Wire Wire Line
+	4600 3800 4600 3900
+Wire Wire Line
+	4600 4100 4600 4200
+$Comp
+L power:GND #PWR0103
+U 1 1 5CAB245D
+P 4600 4200
+F 0 "#PWR0103" H 4600 3950 50  0001 C CNN
+F 1 "GND" H 4650 4000 50  0000 C CNN
+F 2 "" H 4600 4200 50  0001 C CNN
+F 3 "" H 4600 4200 50  0001 C CNN
+	1    4600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3450 4700 3450
+Connection ~ 4200 3450
+Wire Wire Line
+	5300 3550 5400 3550
+Wire Wire Line
+	3600 3450 3000 3450
+Connection ~ 3000 3450
+Wire Wire Line
+	3000 3450 3000 3850
+Wire Wire Line
+	5200 3800 5400 3800
+Connection ~ 5400 3550
+Wire Wire Line
+	5400 3550 6100 3550
+Wire Wire Line
+	4600 2750 4600 3650
+Connection ~ 4600 3650
+$Comp
+L Connector:TestPoint TP102
+U 1 1 5CA4FE81
+P 4200 2750
+F 0 "TP102" H 4150 3100 50  0000 L CNN
+F 1 "TestPoint" H 4050 3000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4400 2750 50  0001 C CNN
+F 3 "~" H 4400 2750 50  0001 C CNN
+	1    4200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2750 4200 3450
+Wire Wire Line
+	4200 3450 4200 3650
+Wire Wire Line
+	4100 4050 4100 4150
+$Comp
+L power:GND #PWR0104
+U 1 1 5CA5D446
+P 4100 4150
+F 0 "#PWR0104" H 4100 3900 50  0001 C CNN
+F 1 "GND" H 4150 3950 50  0000 C CNN
+F 2 "" H 4100 4150 50  0001 C CNN
+F 3 "" H 4100 4150 50  0001 C CNN
+	1    4100 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 4050
+Wire Wire Line
+	4100 4050 4200 4050
+$Comp
+L Device:R_Small R102
+U 1 1 5CB5C28F
+P 5100 3800
+F 0 "R102" V 4900 3800 50  0000 C CNN
+F 1 "10k" V 5000 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5100 3800 50  0001 C CNN
+F 3 "~" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R103
+U 1 1 5CA30F84
+P 4600 4000
+F 0 "R103" H 4450 4100 50  0000 C CNN
+F 1 "10k" H 4500 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4600 4000 50  0001 C CNN
+F 3 "~" H 4600 4000 50  0001 C CNN
+	1    4600 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 3800 5400 3550
+$Comp
+L Connector:TestPoint TP108
+U 1 1 5CA7F834
+P 5400 2750
+F 0 "TP108" H 5350 3100 50  0000 L CNN
+F 1 "TestPoint" H 5250 3000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 5600 2750 50  0001 C CNN
+F 3 "~" H 5600 2750 50  0001 C CNN
+	1    5400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2750 5400 3550
+$Comp
+L Amplifier_Operational:LM324 U101
+U 4 1 5CAB1DC7
+P 8400 5800
+F 0 "U101" H 8400 5400 50  0000 C CNN
+F 1 "LM324" H 8400 5500 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 8350 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 8450 6000 50  0001 C CNN
+	4    8400 5800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8100 5900 8000 5900
+$Comp
+L power:GND #PWR0110
+U 1 1 5CAB1DD2
+P 8000 6000
+F 0 "#PWR0110" H 8000 5750 50  0001 C CNN
+F 1 "GND" H 8050 5800 50  0000 C CNN
+F 2 "" H 8000 6000 50  0001 C CNN
+F 3 "" H 8000 6000 50  0001 C CNN
+	1    8000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5900 8000 6000
+Wire Wire Line
+	8000 5500 8000 5700
+Wire Wire Line
+	8000 5700 8100 5700
+Wire Wire Line
+	8800 5500 8800 5800
+Wire Wire Line
+	8800 5800 8700 5800
+Wire Wire Line
+	8000 5500 8800 5500
 $EndSCHEMATC
