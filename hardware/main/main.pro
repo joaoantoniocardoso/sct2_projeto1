@@ -1,4 +1,4 @@
-update=Mon 01 Apr 2019 04:18:42 PM -03
+update=Wed 03 Apr 2019 01:16:18 AM -03
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=main.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -60,7 +60,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.051
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
 Name=PWR
