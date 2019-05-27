@@ -50,28 +50,11 @@ extern "C" {
 #define	TB_SYNC_DISABLE	0x3
 
 //
-// CLKDIV bits
+// HSPCLKDIV and CLKDIV bits
 //
 #define	TB_DIV1			0x0
 #define	TB_DIV2			0x1
 #define	TB_DIV4			0x2
-#define TB_DIV8         0x3
-#define TB_DIV16        0x4
-#define TB_DIV32        0x5
-#define TB_DIV64        0x6
-#define TB_DIV128       0x7
-
-//
-// HSPCLKDIV bits
-//
-#define TB_HSPDIV1      0x0
-#define TB_HSPDIV2      0x1
-#define TB_HSPDIV4      0x2
-#define TB_HSPDIV6      0x3
-#define TB_HSPDIV8      0x4
-#define TB_HSPDIV10     0x5
-#define TB_HSPDIV12     0x6
-#define TB_HSPDIV14     0x7
 
 //
 // PHSDIR bit
